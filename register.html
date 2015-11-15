@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pádel UPM - Registro">
+    <meta name="author" content="Fernando Moro Hernandez">
+
+    <link href="resources/img/favicon.ico" rel="icon" type="image/x-icon"/>
+
+    <title>Pádel UPM - Registro</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="resources/css/style.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#collapsible">
+
+                    <span class="sr-only">Toggle</span>
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand navbar-logo" href="index.html">Pádel UPM</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="collapsible">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">Instalaciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Reservar</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="register.html"><span class="glyphicon glyphicon-user"></span>
+                        Registro</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main class="form-container">
+    <form class="form-horizontal custom-form">
+        <h3 class="form-header">Registro</h3>
+
+        <div class="form-group">
+            <label for="username" class="control-label col-xs-4">Nombre de usuario*:</label>
+            <input type="text" id="username" class="col-xs-8" required>
+        </div>
+        <div class="form-group">
+            <label for="useremail" class="control-label col-xs-4">Email*:</label>
+            <input type="email" id="useremail" class="col-xs-8" required placeholder="correo.usuario@email.com">
+        </div>
+        <div class="form-group">
+            <label for="userbirthdate" class="control-label col-xs-4">Fecha de nacimiento*:</label>
+            <input type="date" id="userbirthdate" class="col-xs-8" required>
+        </div>
+        <div class="form-group">
+            <label for="userpassword" class="control-label col-xs-4">Contraseña*:</label>
+            <input type="password" id="userpassword" class="col-xs-8" required>
+        </div>
+        <div class="form-group">
+            <label for="userpasswordvalidator" class="control-label col-xs-4">Confirmar contraseña*:</label>
+            <input type="password" id="userpasswordvalidator" class="col-xs-8" required>
+        </div>
+        <div class="send text-center">
+            <button type="submit" class="btn btn-default">Enviar</button>
+        </div>
+    </form>
+</main>
+
+<footer class="container-fluid page-footer">
+    <div class="container-fluid container-960">
+        <div class="row">
+            <section class="contact col-sm-6">
+                <h3>Contacto</h3>
+
+                <div class="social-links">
+                    <a href="http://twitter.com" target="_blank" class="contact-icon contact-icon-twitter"></a>
+                    <a href="http://facebook.com" target="_blank" class="contact-icon contact-icon-facebook"></a>
+                </div>
+            </section>
+            <section class="about col-sm-6">
+                <h3>Acerca de nosotros</h3>
+
+                <p>Somos uno de los clubs deportivos con más tradición dentro de la comunidad universitaria. Como club,
+                    formamos parte de la Universidad Politécnica de Madrid.</p>
+
+                <div class="upm-logo-container">
+                    <div class="bg-icon upm-logo"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
